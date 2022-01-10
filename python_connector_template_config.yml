@@ -1,0 +1,7 @@
+#Configurations for Python Connector Template
+
+workplace_search.access_token: ""
+#Source identifier for the custom source created on the workplace search server
+workplace_search.source_id: ""
+#Workplace search server address Example: https://localhost:3002
+enterprise_search.host_url: "https://localhost:3002/"

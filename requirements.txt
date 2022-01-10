@@ -1,0 +1,5 @@
+# should be pinned
+elastic_enterprise_search==7.16.0
+ecs_logging==1.1.0
+pyyaml==6.0
+tika==1.24
