@@ -47,10 +47,10 @@ setup(
     install_requires=install_requires,
     entry_points="""
       [console_scripts]
-      bootstrap = python_connector_template.bootstrap:main
-      check_connectivity = python_connector_template.check_connectivity:main
-      full_sync = python_connector_template.full_sync:main
-      incremental_sync = python_connector_template.incremental_sync:main
-      deletions_sync = python_connector_template.deletion_sync:main
+      bootstrap=python_connector_template.cmd:bootstrap
+      check_connectivity=python_connector_template.cmd:check_connectivity
+      full_sync=python_connector_template.cmd:full_sync
+      incremental_sync=python_connector_template.cmd:incremental_sync
+      deletions_sync=python_connector_template.cmd:deletion_sync
       """,
 )

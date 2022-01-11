@@ -11,15 +11,16 @@ help:
 
 venv_init:
 	${PYTHON} -m venv venv
-	. venv/bin/activate
 
 setup:
 	${PIP} install -r requirements.txt
 	${PIP} install -r tests/requirements.txt
-	${PYTHON} setup.py install
+	${PIP} install .
 
 test:
 	${PYTHON} -m pytest
 
 clean:
-	rm -r venv
+	rm -rf venv
+	rm -rf build
+	rm -rf *.egg-info
